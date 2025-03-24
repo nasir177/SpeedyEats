@@ -7,7 +7,7 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open dashboard.html",
+            "name": "Open index.html",
             "file": "c:\\Users\\Nasir hussain\\OneDrive\\Desktop\\webdevPotfolio\\dashboard.html"
         }
     ]
