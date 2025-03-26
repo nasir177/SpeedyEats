@@ -233,26 +233,63 @@ header {
     
 }
 /* Splash Screen */
-.splash-screen {
+#splash-screen {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: #de3f05;
-    color: white;
+    background: #fff;
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    font-size: 24px;
+    justify-content: center;
     z-index: 1000;
+    animation: fadeOut 3s ease-out forwards;
 }
 
-/* Pizza Image */
-.pizza-img {
-    width: 150px; /* Adjust the size */
-    height: auto;
-    margin-top: 20px;
+.splash-content {
+    text-align: center;
 }
 
+.splash-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 0;
+    color: #531d09;
+}
+
+.splash-content p {
+    font-size: 20px;
+    color: #333;
+
+} .splash-content img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+
+.speedy {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(232, 50, 18);
+    display: inline-block;
+}
+
+.eats {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+}
+
+.fade-out {
+    animation: fadeOut 1.5s forwards;
+}
+
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    100% { opacity: 0; visibility: hidden; }
+}

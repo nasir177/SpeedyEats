@@ -7,8 +7,9 @@
         {
             "type": "chrome",
             "request": "launch",
-            "name": "Open index.html",
-            "file": "c:\\Users\\Nasir hussain\\OneDrive\\Desktop\\webdevPotfolio\\index.html"
+            "name": "Launch Chrome against localhost",
+            "url": "C:/Users/Nasir hussain/OneDrive/Desktop/webdevPotfolio/index.html",
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }

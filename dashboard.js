@@ -27,10 +27,12 @@ dots.forEach((dot, dotIndex) => {
         updateDots();
     });
 });
-document.addEventListener("DOMContentLoaded", function() {
-    setTimeout(function() {
-        // Redirect to index.html after 3 seconds
-        window.location.href = "index.html";
-    }, 3000); // 3 seconds delay
+document.addEventListener("DOMContentLoaded", function () {
+    setTimeout(() => {
+        document.getElementById("splash-screen").style.display = "none"; // Hide splash screen after 5 seconds
+        document.getElementById("main-content").style.display = "block"; // Show the main content
+    }, 5000);
 });
+
+
 
