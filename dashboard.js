@@ -27,4 +27,10 @@ dots.forEach((dot, dotIndex) => {
         updateDots();
     });
 });
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        // Redirect to index.html after 3 seconds
+        window.location.href = "index.html";
+    }, 3000); // 3 seconds delay
+});
 
