@@ -1,3 +1,4 @@
+
 const dots = document.querySelectorAll('.dot');
 const bannerTrack = document.querySelector('.banner-track');
 const slides = document.querySelectorAll('.banner-track img');
@@ -31,8 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(() => {
         document.getElementById("splash-screen").style.display = "none"; // Hide splash screen after 5 seconds
         document.getElementById("main-content").style.display = "block"; // Show the main content
-    }, 5000);
+    }, 1000);
 });
-
-
+ 
 

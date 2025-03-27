@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Detail</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <div  class="product-container">
+        <div class="product-image">
+            <img id="food-image" src="" alt="Food Item">
+        </div>
+        <!-- Right Side: Details -->
+        <div class="product-details">
+            <h1 id="food-name" class="product-title"></h1>
+            <div class="price-section">
+                <span id="food-price" class="discounted"></span>
+                <span class="original">₹799</span> <!-- Example original price -->
+                <span class="discount">38% Off</span>
+            </div>
+            <!-- <div class="badge-container">
+                <span class="badge with-egg">WITH EGG</span>
+                <span class="badge eggless">EGGLESS</span>
+            </div>-->
+            <h3>Available Size</h3>
+            <div class="combos-container">
+                <div class="combo">
+                    <img src="food/Meat-Feast-Pizza.jpg" alt="Large">
+                    <p>₹1099</p>
+                </div>
+                <div class="combo">
+                    <img src="food/Meat-Feast-Pizza.jpg" alt="Medium">
+                    <p>₹499</p>
+                </div>
+                <div class="combo">
+                    <img src="food/Meat-Feast-Pizza.jpg" alt="Small">
+                    <p>₹299</p>
+                </div>
+            </div>
+            
+            
+            <div class="location">
+                <p>📍 110025, Zakir Nagar, New Delhi, India</p>
+            </div>
+            <div class="buttons">
+                <button class="add-to-cart">Add to Cart</button>
+                <button class="buy-now">Buy Now</button>
+            </div>
+        </div>
+    </div>
+    <div class="suggestions-container">
+        <h1>          You May Also Like</h1>
+        <div class="menu-cards">
+            <!-- Your menu items here -->
+        </div>
+    </div>
+    <div class="combos-container">
+    <div class="menu-grid">
+        <div class="menu-card">
+            <a href="food-detail.html?name=Meat Feast&price=249&image=food-details\Meat Feast pizza.jpg">
+                <img src="food\Meat Feast pizza.jpg" alt="Meat Feast">
+                <h3>Meat Feast</h3>
+                <p>₹249</p>
+            </a>
+        </div>
+
+        <div class="menu-card">
+            <a href="food-detail.html?name=Margherita Flatbread&price=250&image=food-details\Margherita Flatbread.jpg">
+                <img src="food\Margherita Flatbread.jpg" alt="Margherita Flatbread">
+                <h3>Margherita Flatbread</h3>
+                <p>₹250</p>
+            </a>
+        </div>
+
+        <div class="menu-card">
+            <a href="food-detail.html?name=Classic Beef Burger&price=400&image=food-details\Classic Beef Burger.jpg">
+                <img src="food\Classic Beef Burger.jpg" alt="Classic Beef Burger">
+                <h3>Classic Beef Burger</h3>
+                <p>₹400</p>
+            </a>
+        </div>
+
+        <div class="menu-card">
+            <a href="food-detail.html?name=Spicy Jalapeño Burger&price=420&image=food-details/spicy-jalapeno-detail.jpg">
+                <img src="food\Spicy Jalapeño Burger.jpg" alt="Spicy Jalapeño">
+                <h3>Spicy Jalapeño</h3>
+                <p>₹420</p>
+            </a>
+        </div>
+    </div> <!-- Closing menu-grid properly -->
+</div> <!-- Closing combos-container properly -->
+
+<!-- Footer starts AFTER menu grid -->
+<footer class="bottom-bar">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Features</h3>
+            <ul>
+                <li><a href="#">Featured</a></li>
+                <li><a href="#">Sides</a></li>
+                <li><a href="#">Breakfast</a></li>
+                <li><a href="#">Cafe</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Sustainability</h3>
+            <ul>
+                <li><a href="#">Allergens and Nutrition List</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>App</h3>
+            <ul>
+                <li><a href="#">SpeedyEats</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Social Media</h3>
+            <ul>
+                <li><a href="#">GitHub</a></li>
+                <li><a href="#">LinkedIn</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2025 Nasir Hussain. All Rights Reserved.</p>
+    </div>
+</footer>
+
+
+    
+            
+
+    <script src="food-detail.js"></script>
+</body>
+</html>
