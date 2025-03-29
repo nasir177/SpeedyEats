@@ -8,6 +8,34 @@
 </head>
 <body>
 
+     <!-- Top Navigation -->
+<div class="top-nav">
+   
+    <a href="#">Sign In |</a>
+    <a href="#">Sign Up |</a>
+    <a href="#">Search
+    </a> 
+
+</div>
+
+<div class="logo">
+    <span class="speedy">Speedy</span><span class="eats">Eats</span>
+</div>
+</header>
+
+
+ <!-- Main Navigation in Top Bar -->
+ <nav class="main-nav">
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Favourite</a></li>
+        <li><a href="#">Order</a></li>
+        <li><a href="#">Profile</a></li>
+    </ul>
+</nav>
+
     <div  class="product-container">
         <div class="product-image">
             <img id="food-image" src="" alt="Food Item">
@@ -17,8 +45,8 @@
             <h1 id="food-name" class="product-title"></h1>
             <div class="price-section">
                 <span id="food-price" class="discounted"></span>
-                <span class="original">₹799</span> <!-- Example original price -->
-                <span class="discount">38% Off</span>
+                <span class="original"></span> <!-- Example original price -->
+                <span class="discount"></span>
             </div>
             <!-- <div class="badge-container">
                 <span class="badge with-egg">WITH EGG</span>
@@ -27,23 +55,46 @@
             <h3>Available Size</h3>
             <div class="combos-container">
                 <div class="combo">
-                    <img src="food/Meat-Feast-Pizza.jpg" alt="Large">
+                    <img src="food\Meat Feast pizza.jpg" alt="Large">
+                    <p>Large</p>
                     <p>₹1099</p>
                 </div>
                 <div class="combo">
-                    <img src="food/Meat-Feast-Pizza.jpg" alt="Medium">
+                    <img src="food\Meat Feast pizza.jpg" alt="Medium">
+                    <p>Medium</p>
                     <p>₹499</p>
                 </div>
                 <div class="combo">
-                    <img src="food/Meat-Feast-Pizza.jpg" alt="Small">
+                    <img src="food\Meat Feast pizza.jpg" alt="Small">
+                    <p>Small</p>
                     <p>₹299</p>
                 </div>
             </div>
             
             
             <div class="location">
-                <p>📍 110025, Zakir Nagar, New Delhi, India</p>
+                <label for="user-location">📍 Location:</label>
+                <input type="text" id="user-location" value="110025, Zakir Nagar, New Delhi, India">
+                <button onclick="updateLocation()">Update</button>
             </div>
+            <h2>About the product</h2>
+            <div class="product-des-container">
+                <div class="product-box" onclick="toggleDescription('desc1')">
+                  <!--<img src="clipboard-icon.png" alt="Icon"> -->  
+                  <span>Product 1</span>
+                    <span>▼</span>
+                </div>
+                <div id="desc1" class="product-des-details">This is the description for Product 1.</div>
+            </div>
+            <!-- <div class="product-des-container">
+                <div class="product-box" onclick="toggleDescription('desc2')">
+                  <img src="clipboard-icon.png" alt="Icon"> 
+                  <span>Product 2</span>
+                  <span>▼</span>
+              </div>
+              <div id="desc2" class="product-des-details">This is the description for Product 2.</div>
+          </div> -->
+           
             <div class="buttons">
                 <button class="add-to-cart">Add to Cart</button>
                 <button class="buy-now">Buy Now</button>
